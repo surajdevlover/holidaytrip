@@ -1,0 +1,128 @@
+:root {
+    --primary-color: #ff7e01;
+    --secondary-color: #faa935;
+    --heading-color: #0b2727;
+    --text-color: #6e7074;
+    --font-name: "Montserrat", sans-serif;
+    --subtitle-font-name: "Island Moments", cursive;
+}
+
+.tour__img{
+    height: 100%;
+    display: grid;
+    row-gap: 10px;
+    padding: .2rem;
+    border-radius: 10px;
+    align-items: center;
+    background: #b0bfdd;
+    box-shadow: 0 4px 6px rgba(140, 140, 140, 0.549);
+    overflow: hidden;
+}
+
+/* .tour__card:hover{
+        background: #aea69c;
+        box-shadow: 1 4px 4px rgba(101, 101, 139, 0.549);
+        transition: .3s ease;
+        cursor: pointer;
+} */
+
+.tour__img img{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-radius: 5px 5px 0 0;
+    transition: 2s ease;
+    object-fit: cover;
+    
+}
+
+.card{
+    border: none !important;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
+.tour__img{
+    position: relative;
+    overflow: hidden;
+}
+
+.tour__img img:hover{
+    transform: scale(1.1);
+}
+
+.tour__img span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: max-content;
+    height: max-content;
+    z-index: 10;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.3rem 0.5rem;
+    border-radius: 3px 0 0 0;
+}
+
+.card__top span i{
+    color: var(--secondary-color);
+}
+
+.tour__rating{
+    font-size: .9rem;
+    color: var(--text-color);
+}
+
+.tour__location{
+    color: var(--heading-color);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.tour__rating i,
+.tour__location i{
+    font-size: 1rem;
+}
+
+.tour__title{
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.tour__title a{
+    text-decoration: none;
+    color: var(--heading-color);
+    transition: .3s;
+}
+
+.tour__title a:hover{
+    color: var(--secondary-color);
+}
+
+.card__bottom h5{
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.card__bottom h5 span{
+    font-weight: 500;
+    color: var(--text-color);
+    font-size: 0.8rem;
+}
+
+.booking__btn{
+    background: var(--secondary-color) !important;
+    cursor: pointer;
+    padding: 0.2rem 0.5rem !important;
+}
+
+.booking__btn a{
+    text-decoration: none;
+    font-size: .9rem;
+    color: #fff;
+}
+
+.booking__btn a:hover{
+    color: #0b2727;
+}

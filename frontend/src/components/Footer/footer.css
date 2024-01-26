@@ -1,0 +1,130 @@
+:root {
+    --primary-color: #ff7e01;
+    --secondary-color: #faa935;
+    --heading-color: #0b2727;
+    --text-color: #6e7074;
+    --font-name: "Montserrat", sans-serif;
+    --subtitle-font-name: "Island Moments", cursive;
+}
+
+.footer .logo img{
+    width: 50%;
+    margin-top: 5rem;
+}
+
+.footer .logo p{
+    color: white;
+    padding-top: 1rem;
+}
+
+.social__links span a{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+
+.social__links span a:hover{
+    color: var(--secondary-color);
+    transition: .3s ease-in-out;
+    font-size: 2.1rem;
+}
+
+.footer__link-title{
+    color: var(--secondary-color);
+    margin-top: 4rem;
+}
+
+.footer__quick-links{
+    margin-top: 1rem;
+    background:transparent !important;
+}
+
+.footer__quick-links li{
+    background:transparent !important;
+}
+
+.footer__quick-links li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.footer__quick-links li a:hover{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    transition: .3s ease-in;
+}
+
+.footer__quick-links li p{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.footer__quick-links li h6{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.footer__quick-links h6 span i{
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+}
+
+.copyright{
+    color: whitesmoke;
+    font-size: 1.1rem;
+}
+
+.videoDiv{
+    position: absolute;
+    height: 50%;
+    width: 100%;
+
+    video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        z-index: -2000;
+        mix-blend-mode: multiply;
+    }
+
+    &::after{
+        content:'';
+        position: absolute;
+        background: rgba(12, 13, 13, 0.307);
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        mix-blend-mode: multiply;
+        z-index: -2000;
+    }
+}
+
+/* media queries ============== */
+
+@media screen and (min-width: 500px) {
+    .footer{
+        .secContent{
+            .footerCard{
+                .footerLinks{
+                    grid-template-columns: repeat(3,1fr);
+                    padding-bottom: 1rem;
+                }
+
+                .footerDiv{
+                    justify-content: space-between;
+                    flex-direction: row;
+
+                    small{
+                        font-size: 14px;
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+        }
+    }
+  }

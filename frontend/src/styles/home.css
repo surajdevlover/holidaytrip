@@ -1,0 +1,410 @@
+:root {
+    --primary-color: #ff7e01;
+    --secondary-color: #faa935;
+    --heading-color: #0b2727;
+    --text-color: #6e7074;
+    --font-name: "Montserrat", sans-serif;
+    --subtitle-font-name: "Island Moments", cursive;
+}
+
+.hero__subtitle img{
+    width: 2.3rem;
+    height: 2.3rem;
+}
+
+.hero__content h1{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    /* padding-left: 2.5rem; */
+    color: #fff;
+    /* background-color: var(--secondary-color); */
+    border-radius: 40px;
+    font-family: 'Lobster', sans-serif !important;
+    letter-spacing: 3px;
+}
+
+.hero__content h1 .highlight{
+    color: var(--secondary-color);
+}
+
+.hero__content p{
+    font-size: 1.1rem;
+    width: 100%;
+    color: rgb(248, 247, 247);
+    line-height: 2rem;
+    /* background-color: white; */
+    border-radius: 40px;
+    /* padding-left: 2rem; */
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    z-index: -5;
+    width: 110%;
+    letter-spacing: 1.3px;
+}
+
+.hero__content p .highlight{
+    color: var(--secondary-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: 'Lobster', sans-serif !important;
+    letter-spacing: 3px;
+}
+
+/* .hero__img-box img, 
+.hero__img-box video{
+    width: 100%;
+    height: 350;
+    border-radius: 20px;
+    border: 1px solid var(--secondary-color);
+    object-fit: cover;
+} */
+
+.hero__content{
+    padding-top: 4rem;
+}
+
+.hero__img-box{
+    padding-top: 2rem;
+}
+
+.services__subtitle{
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #ee6e6e;
+    font-family: var(--subtitle-font-name);
+}
+
+.services__title{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.featured__tour-title{
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+
+.experience__content h2{
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.experience__content p{
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-top: 1rem;
+}
+
+.counter__wrapper{
+    margin-top: 2.5rem;
+}
+
+.counter__box span{
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 10px 5px 10px 5px;
+}
+
+.counter__box h6{
+    font-size: 1.1rem;
+    margin-top: 0.7rem;
+    color: var(--text-color);
+}
+
+.experience__img img{
+    width: 90%;
+}
+
+.gallery__title{
+    font-size: 2.3rem;
+    margin-bottom: 2.5rem;
+    margin-top: 1rem;
+}
+
+.masonry__img{
+    transition: .5s;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3%;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.masonry__img:hover{
+    transform: scale(1.2);
+}
+
+.testimonial__title{
+    font-size: 2.3rem;
+    margin-top: 1rem;
+}
+
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(139, 157, 160, 0.932);
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    mix-blend-mode: multiply;
+}
+
+video{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    object-fit: cover;
+    background: rgb(185, 206, 214);
+    mix-blend-mode: multiply;
+}
+
+
+/* @media screen and (min-width: 500px) {
+    .hero__content{
+        h1{
+            font-size: 1.7rem;
+        }
+        
+        p{
+            font-size: 1rem;
+            width: 90%;
+        }
+    }
+
+    .services__subtitle{
+        font-size: 2rem;
+        width: 70%;
+    }
+
+    .services__title, .featured__tour-title{
+        font-size: 1.7rem;
+    }
+
+    .experience__content h2{
+        font-size: 1.7rem;
+    }
+
+    .experience__content p{
+        font-size: 1rem;
+        width: 80%;
+    }
+
+    .counter__wrapper{
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .counter__wrapper .counter__box span{
+        width: 50px;
+        height: 50px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--primary-color);
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 500;
+        border-radius: 10px 5px 10px 5px;
+    }
+
+    .counter__wrapper .counter__box h6{
+        font-size: 1rem;
+        margin-top: 0.5rem;
+        color: var(--text-color);
+    }
+
+    .experience__img img{
+        width: 80%;
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+
+    .gallery__title{
+        font-size: 1.7rem;
+    }
+    
+    .masonry__img{
+        height: auto;
+        width: 20px;
+    }
+    
+    .masonry__img:hover{
+        transform: scale(1.1);
+    }
+
+    .testimonial__title{
+        position: relative;
+        font-size: 1.7rem;
+        width: 70%;
+        margin-top: 6%;
+    }
+} */
+
+/* @media screen and (min-width: 1200px) {
+    .hero__subtitle img{
+        width: 2.3rem;
+        height: 2.3rem;
+    }
+    
+    .hero__content h1{
+        font-size: 3rem;
+        font-weight: 500;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        color: #fff;
+        border-radius: 40px;
+        font-family: 'Lobster', sans-serif !important;
+        letter-spacing: 3px;
+    }
+    
+    .hero__content h1 .highlight{
+        color: var(--secondary-color);
+    }
+    
+    .hero__content p{
+        font-size: 1.1rem;
+        width: 100%;
+        color: rgb(248, 247, 247);
+        line-height: 2rem;
+        border-radius: 40px;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+        z-index: -5;
+        width: 110%;
+        letter-spacing: 1.3px;
+    }
+    
+    .hero__content p .highlight{
+        color: var(--secondary-color);
+        font-size: 1.4rem;
+        font-weight: 500;
+        font-family: 'Lobster', sans-serif !important;
+        letter-spacing: 3px;
+    }
+
+    .hero__content{
+        padding-top: 4rem;
+    }
+    
+    .hero__img-box{
+        padding-top: 2rem;
+    }
+    
+    .services__subtitle{
+        font-size: 2.2rem;
+        font-weight: 600;
+        color: #ee6e6e;
+        font-family: var(--subtitle-font-name);
+    }
+    
+    .services__title{
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+    
+    .featured__tour-title{
+        font-size: 2.3rem;
+        font-weight: 500;
+    }
+    
+    .experience__content h2{
+        font-size: 2.5rem;
+        margin-top: 1rem;
+        font-weight: 500;
+    }
+    
+    .experience__content p{
+        font-size: 1.1rem;
+        color: var(--text-color);
+        margin-top: 1rem;
+    }
+    
+    .counter__wrapper{
+        margin-top: 2.5rem;
+    }
+    
+    .counter__box span{
+        width: 70px;
+        height: 70px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--primary-color);
+        color: #fff;
+        font-size: 1.6rem;
+        font-weight: 600;
+        border-radius: 10px 5px 10px 5px;
+    }
+    
+    .counter__box h6{
+        font-size: 1.1rem;
+        margin-top: 0.7rem;
+        color: var(--text-color);
+    }
+    
+    .experience__img img{
+        width: 90%;
+    }
+    
+    .gallery__title{
+        font-size: 2.3rem;
+        margin-bottom: 2.5rem;
+        margin-top: 1rem;
+    }
+    
+    .masonry__img{
+        transition: .5s;
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(2,1fr);
+        gap: 3%;
+        box-sizing: border-box;
+        border-radius: 20px;
+    }
+    
+    .masonry__img:hover{
+        transform: scale(1.1);
+    }
+    
+    .testimonial__title{
+        font-size: 2.3rem;
+        margin-top: 1rem;
+    }
+    
+    .overlay{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: rgba(139, 157, 160, 0.932);
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        mix-blend-mode: multiply;
+    }
+    
+    video{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        object-fit: cover;
+        background: rgb(185, 206, 214);
+        mix-blend-mode: multiply;
+    }
+} */
